@@ -19,33 +19,7 @@ func main() {
 	fmt.Println("sum1:", sum1)
 	fmt.Println("sum2:", sum2)
 
-	var m map[string]int = make(map[string]int)
-	m["key"] = 1
-
-	fmt.Println("m:", m)
-
 	fmt.Println("average:", average(array...))
-
-	var i uint64 = 1
-	for {
-		var f = factorial(i)
-		fmt.Println("fact:", f, i)
-
-		if f == 0 {
-			break
-		}
-		i = i + 1
-	}
-
-	fmt.Println("factorial:", factorial(70))
-}
-
-func factorial(x uint64) uint64 {
-	if x == 0 {
-		return 1
-	}
-
-	return x * factorial(x-1)
 }
 
 func average(xs ...int) int {
