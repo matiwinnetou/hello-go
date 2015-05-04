@@ -5,6 +5,10 @@ import "fmt"
 func main() {
 	var array []int = []int{1, 2, 3, 4, 5}
 
+	var a [2]string = [2]string{"hello", "world"}
+	fmt.Println(a[0], a[1])
+	fmt.Println(a)
+
 	var sum1 int = 0
 	for i := 0; i < len(array); i++ {
 		sum1 += array[i]
